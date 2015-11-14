@@ -16,7 +16,7 @@ class App extends Component {
 					onChange={this.props.updateMessage}
 					onSubmit={this.props.addMessage}/>
 			</div>
-		)
+		);
 	}
 }
 
