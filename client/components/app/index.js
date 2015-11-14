@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
 import {} from './style.less';
+import MessageList from 'components/message-list';
+import MessageEntryBox from 'components/message-entry-box';
 
 class App extends Component {
-	constructor() {
-		super();
-	}
 	render() {
-		return <div>Hello from React Component</div>;
+		return (
+			<div>
+				<MessageList messages={this.props.messages}/>
+				<MessageEntryBox 
+					value={this.props.currentMessage}
+					onChange={this.props.updateMessage}
+					onSubmit={this.props.addMessage}/>
+			</div>
+		)
 	}
 }
 
