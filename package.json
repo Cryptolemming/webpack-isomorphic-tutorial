@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cryptolemming/newblog.git"
+    "url": "git+https://github.com/Cryptolemming/webpack-isomorphic-tutorial.git"
   },
   "author": "Ali Ayoub",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Cryptolemming/newblog/issues"
+    "url": "https://github.com/Cryptolemming/webpack-isomorphic-tutorial/issues"
   },
-  "homepage": "https://github.com/Cryptolemming/newblog#readme",
+  "homepage": "https://github.com/Cryptolemming/webpack-isomorphic-tutorial#readme",
   "devDependencies": {
     "babel-core": "^6.1.2",
     "babel-loader": "^6.0.1",
