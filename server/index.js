@@ -10,7 +10,10 @@ import App from './generated/app';
 const app = express();
 
 // view templates
-app.engine('handlebars', handlebars({defaultLayout: 'main'}));
+app.engine('handlebars', handlebars({
+	defaultLayout: 'main',
+	layoutsDir: path.resolve(__dirname, 'views'));
+}));
 app.set('view engine', 'handlebars');
 
 // static assets from /dist
@@ -35,4 +38,4 @@ app.get('/', (request, response) => {
 	});
 });
 
-app.listen(3000, () => console.log('Server running'));
+export defualt app;
