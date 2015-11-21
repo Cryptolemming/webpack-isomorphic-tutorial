@@ -15,6 +15,7 @@ app.engine('handlebars', handlebars({
 	layoutsDir: path.resolve(__dirname, 'views'));
 }));
 app.set('view engine', 'handlebars');
+app.set('views', path.resolve(__dirname, 'views'));
 
 // static assets from /dist
 app.use(express.static(path.resolve(__dirname, '../dist')));
