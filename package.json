@@ -4,7 +4,8 @@
   "description": "Modern JavaScript remake",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-dev": "NODE_ENV=development nodemon --exec babel-node index.js -e js,handlebar",
+    "webpack-dev": "babel-node webpack.development.js"
   },
   "repository": {
     "type": "git",
