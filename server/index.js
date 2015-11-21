@@ -12,7 +12,7 @@ const app = express();
 // view templates
 app.engine('handlebars', handlebars({
 	defaultLayout: 'main',
-	layoutsDir: path.resolve(__dirname, 'views')
+	layoutsDir: path.resolve(__dirname, 'views/layouts')
 }));
 app.set('view engine', 'handlebars');
 app.set('views', path.resolve(__dirname, 'views'));
