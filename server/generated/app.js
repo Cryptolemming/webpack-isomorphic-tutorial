@@ -71,7 +71,7 @@ module.exports =
 
 	var _messageEntryBox2 = _interopRequireDefault(_messageEntryBox);
 
-	var _messageActions = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"actions/message-actions\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _messageActions = __webpack_require__(10);
 
 	var messageActionCreators = _interopRequireWildcard(_messageActions);
 
@@ -283,6 +283,30 @@ module.exports =
 	})(_react.Component);
 
 	exports.default = MessageEntryBox;
+
+/***/ },
+/* 10 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	exports.updateMessage = updateMessage;
+	exports.addMessage = addMessage;
+	var UPDATE_MESSAGE = exports.UPDATE_MESSAGE = 'update-message';
+	var ADD_MESSAGE = exports.ADD_MESSAGE = 'add-message';
+
+	// these are action creator functions which update state in the store
+
+	function updateMessage(message) {
+		return { type: UPDATE_MESSAGE, message: message };
+	}
+
+	function addMessage() {
+		return { type: ADD_MESSAGE };
+	}
 
 /***/ }
 /******/ ]);

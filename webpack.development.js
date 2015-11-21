@@ -37,7 +37,7 @@ const devConfig = Object.assign({}, config.client, {
 			{
 				test: /\.js$/,
 				include: config.CLIENT_DIR,
-				loader: 'react-hot-loadder!babel-loader',
+				loader: 'react-hot-loader!babel-loader',
 			}
 		]
 	},

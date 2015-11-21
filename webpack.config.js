@@ -1,5 +1,5 @@
 import path from 'path';
-import ExtractTextPlugin from ('extract-text-webpack-plugin');
+import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 export const CLIENT_DIR = path.resolve(__dirname, 'client');
 export const SERVER_DIR = path.resolve(__dirname, 'server/generated');
